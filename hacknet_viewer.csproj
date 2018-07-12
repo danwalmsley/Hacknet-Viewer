@@ -68,7 +68,4 @@
     <Compile Include="File.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <ItemGroup>
-    <None Include="products.xml" />
-  </ItemGroup>
 </Project>
