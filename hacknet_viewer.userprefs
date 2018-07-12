@@ -1,0 +1,40 @@
+﻿<Properties StartupItem="hacknet_viewer.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Node.cs">
+    <Files>
+      <File FileName="Program.cs" Line="13" Column="21" />
+      <File FileName="Parser.cs" Line="26" Column="39" />
+      <File FileName="Node.cs" Line="26" Column="39" />
+      <File FileName="File.cs" Line="10" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="hacknet_viewer" expanded="True">
+            <Node name="hacknet_viewer" expanded="True">
+              <Node name="Node.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State name="__root__">
+          <Node name="hacknet_viewer" expanded="True">
+            <Node name="hacknet_viewer" expanded="True">
+              <Node name="hacknet_viewer" expanded="True" selected="True">
+                <Node name="hacknet_viewer.Node" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

@@ -1,0 +1,6 @@
+/home/bast/Programming/CSharp/hacknet_viewer/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/bast/Programming/CSharp/hacknet_viewer/obj/x86/Debug/hacknet_viewer.gtk-gui.gui.stetic
+/home/bast/Programming/CSharp/hacknet_viewer/bin/Debug/hacknet_viewer.exe.mdb
+/home/bast/Programming/CSharp/hacknet_viewer/bin/Debug/hacknet_viewer.exe
+/home/bast/Programming/CSharp/hacknet_viewer/obj/x86/Debug/hacknet_viewer.exe
+/home/bast/Programming/CSharp/hacknet_viewer/obj/x86/Debug/hacknet_viewer.exe.mdb
