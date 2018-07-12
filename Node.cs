@@ -23,7 +23,7 @@ namespace hacknet_viewer {
 		// Firewall
 		public int firewallLevel; // Set to -1 to remove
 		public string firewallSolution;
-		public float firewallAdditionalTime;
+		public double firewallAdditionalTime;
 
 		// Trace
 		public int traceTimer; // Set to -1 to remove
@@ -45,7 +45,7 @@ namespace hacknet_viewer {
 
 			this.files = new List<File>();
 			this.links = new List<String>();
-			this.ports = new List<int>(21, 22, 25, 80, 1433, 104, 6881, 443, 192, 554);
+			this.ports = new List<int> {21, 22, 25, 80, 1433, 104, 6881, 443, 192, 554};
 
 			// Firewall
 			this.firewallLevel = -1; // Cannot be shorter than the solution! (unless -1)
