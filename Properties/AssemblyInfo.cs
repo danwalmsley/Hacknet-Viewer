@@ -5,11 +5,11 @@ using System.Runtime.CompilerServices;
 // Change them to the values specific to your project.
 
 [assembly: AssemblyTitle ("hacknet_viewer")]
-[assembly: AssemblyDescription ("")]
+[assembly: AssemblyDescription ("A graphical viewer for the Hacknet Extensions XML files.")]
 [assembly: AssemblyConfiguration ("")]
 [assembly: AssemblyCompany ("")]
 [assembly: AssemblyProduct ("")]
-[assembly: AssemblyCopyright ("bast")]
+[assembly: AssemblyCopyright ("BastIsAwesome")]
 [assembly: AssemblyTrademark ("")]
 [assembly: AssemblyCulture ("")]
 

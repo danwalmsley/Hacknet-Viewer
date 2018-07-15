@@ -44,8 +44,30 @@ Global
 		$2.LockParentheses = False
 		$2.UsingParentheses = False
 		$2.SpacesBeforeBrackets = False
-		$2.inheritsSet = Mono
-		$2.inheritsScope = text/x-csharp
 		$2.scope = text/x-csharp
+		$2.IndentSwitchSection = False
+		$2.NewLinesForBracesInTypes = False
+		$2.NewLinesForBracesInMethods = False
+		$2.NewLinesForBracesInProperties = False
+		$2.NewLinesForBracesInAccessors = False
+		$2.NewLinesForBracesInAnonymousMethods = False
+		$2.NewLinesForBracesInControlBlocks = False
+		$2.NewLinesForBracesInAnonymousTypes = False
+		$2.NewLinesForBracesInObjectCollectionArrayInitializers = False
+		$2.NewLinesForBracesInLambdaExpressionBody = False
+		$2.NewLineForElse = False
+		$2.NewLineForCatch = False
+		$2.NewLineForFinally = False
+		$2.NewLineForMembersInObjectInit = False
+		$2.NewLineForMembersInAnonymousTypes = False
+		$2.NewLineForClausesInQuery = False
+		$2.SpaceAfterControlFlowStatementKeyword = False
+		$2.SpaceAfterColonInBaseTypeDeclaration = False
+		$2.SpaceAfterSemicolonsInForStatement = False
+		$2.SpaceBeforeColonInBaseTypeDeclaration = False
+		$0.TextStylePolicy = $3
+		$3.FileWidth = 80
+		$3.TabsToSpaces = True
+		$3.scope = text/plain
 	EndGlobalSection
 EndGlobal

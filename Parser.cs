@@ -8,8 +8,8 @@ namespace hacknet_viewer {
 		public Parser() {
 			nodes = new List<Node>();
 
-			nodes.Add(parseNode(Environment.GetFolderPath(Environment.SpecialFolder.Personal) + "/Hacknet_Py/BastExtension/Nodes/playerPC.xml"));
-			nodes.Add(parseNode(Environment.GetFolderPath(Environment.SpecialFolder.Personal) + "/Hacknet_Py/BastExtension/Nodes/Start/startPC2.xml"));
+			nodes.Add(parseNode(Environment.GetFolderPath(Environment.SpecialFolder.Personal) + "/IntroExtension/Nodes/PlayerComp.xml"));
+			nodes.Add(parseNode(Environment.GetFolderPath(Environment.SpecialFolder.Personal) + "/IntroExtension/Nodes/Intro/FactionEntryNode.xml"));
 		}
 
 		private Node parseNode(string filename) {
@@ -33,7 +33,7 @@ namespace hacknet_viewer {
 			if(root.HasAttribute("allowsDefaultBootModule"))
 				bool.TryParse(root.Attributes["allowsDefaultBootModule"].Value, out nodeABDM);
 
-			Node node = new Node(nodeId, nodeName, nodeIp, nodeIcon, nodeSecurity, nodeType, nodeABDM);
+			Node node = new Node(nodeId, nodeName, nodeIp, nodeIcon, nodeSecurity, nodeType, nodeABDM, "", new List<Account>());
 
 			// Parse through files!
 			List<File> nodeFiles = new List<File>();
@@ -52,6 +52,15 @@ namespace hacknet_viewer {
 			foreach(XmlNode link in links) {
 				nodeDLinks.Add(link.Attributes["target"].Value);
 			}
+
+			XmlNode ports = root.SelectSingleNode("ports");
+			List<int> nodePorts = new List<int>();
+
+			foreach(string port in ports.InnerText.Split(',')) {
+				int portNum;
+				Int32.TryParse(port.Trim(), out portNum);
+				nodePorts.Add(portNum);
+			 }
 
 			node.links = nodeDLinks;
 

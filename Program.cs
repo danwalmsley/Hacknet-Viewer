@@ -14,10 +14,10 @@ namespace hacknet_viewer
 
 			return;
 
-			Application.Init ();
-			MainWindow win = new MainWindow ();
-			win.Show ();
-			Application.Run ();
+			Application.Init();
+			MainWindow win = new MainWindow();
+			win.Show();
+			Application.Run();
 		}
 	}
 }
