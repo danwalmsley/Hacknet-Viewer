@@ -1,73 +1,33 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hacknet_viewer", "hacknet_viewer.csproj", "{93B24EB5-51BC-4F28-B092-04F6CCA0A38D}"
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hacknet_viewer", "hacknet_viewer.csproj", "{8EF7311F-EC2A-44FD-91F5-0A2436FA8304}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hacknet", "..\..\..\misc\hacknet_decomp\Hacknet.csproj", "{9E80F546-76DE-44FD-A994-93E59329E297}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 		Debug|x86 = Debug|x86
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{93B24EB5-51BC-4F28-B092-04F6CCA0A38D}.Debug|x86.ActiveCfg = Debug|x86
-		{93B24EB5-51BC-4F28-B092-04F6CCA0A38D}.Debug|x86.Build.0 = Debug|x86
-		{93B24EB5-51BC-4F28-B092-04F6CCA0A38D}.Release|x86.ActiveCfg = Release|x86
-		{93B24EB5-51BC-4F28-B092-04F6CCA0A38D}.Release|x86.Build.0 = Release|x86
-	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
-		Policies = $0
-		$0.TextStylePolicy = $1
-		$1.inheritsSet = null
-		$1.scope = text/x-csharp
-		$0.CSharpFormattingPolicy = $2
-		$2.NamespaceBraceStyle = EndOfLine
-		$2.ClassBraceStyle = EndOfLine
-		$2.InterfaceBraceStyle = EndOfLine
-		$2.StructBraceStyle = EndOfLine
-		$2.EnumBraceStyle = EndOfLine
-		$2.MethodBraceStyle = EndOfLine
-		$2.ConstructorBraceStyle = EndOfLine
-		$2.DestructorBraceStyle = EndOfLine
-		$2.BeforeMethodDeclarationParentheses = False
-		$2.BeforeMethodCallParentheses = False
-		$2.BeforeConstructorDeclarationParentheses = False
-		$2.BeforeIndexerDeclarationBracket = False
-		$2.BeforeDelegateDeclarationParentheses = False
-		$2.AfterDelegateDeclarationParameterComma = True
-		$2.NewParentheses = False
-		$2.IfParentheses = False
-		$2.WhileParentheses = False
-		$2.ForParentheses = False
-		$2.ForeachParentheses = False
-		$2.CatchParentheses = False
-		$2.SwitchParentheses = False
-		$2.LockParentheses = False
-		$2.UsingParentheses = False
-		$2.SpacesBeforeBrackets = False
-		$2.scope = text/x-csharp
-		$2.IndentSwitchSection = False
-		$2.NewLinesForBracesInTypes = False
-		$2.NewLinesForBracesInMethods = False
-		$2.NewLinesForBracesInProperties = False
-		$2.NewLinesForBracesInAccessors = False
-		$2.NewLinesForBracesInAnonymousMethods = False
-		$2.NewLinesForBracesInControlBlocks = False
-		$2.NewLinesForBracesInAnonymousTypes = False
-		$2.NewLinesForBracesInObjectCollectionArrayInitializers = False
-		$2.NewLinesForBracesInLambdaExpressionBody = False
-		$2.NewLineForElse = False
-		$2.NewLineForCatch = False
-		$2.NewLineForFinally = False
-		$2.NewLineForMembersInObjectInit = False
-		$2.NewLineForMembersInAnonymousTypes = False
-		$2.NewLineForClausesInQuery = False
-		$2.SpaceAfterControlFlowStatementKeyword = False
-		$2.SpaceAfterColonInBaseTypeDeclaration = False
-		$2.SpaceAfterSemicolonsInForStatement = False
-		$2.SpaceBeforeColonInBaseTypeDeclaration = False
-		$0.TextStylePolicy = $3
-		$3.FileWidth = 80
-		$3.TabsToSpaces = True
-		$3.scope = text/plain
+		{8EF7311F-EC2A-44FD-91F5-0A2436FA8304}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EF7311F-EC2A-44FD-91F5-0A2436FA8304}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EF7311F-EC2A-44FD-91F5-0A2436FA8304}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EF7311F-EC2A-44FD-91F5-0A2436FA8304}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EF7311F-EC2A-44FD-91F5-0A2436FA8304}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8EF7311F-EC2A-44FD-91F5-0A2436FA8304}.Debug|x86.Build.0 = Debug|Any CPU
+		{8EF7311F-EC2A-44FD-91F5-0A2436FA8304}.Release|x86.ActiveCfg = Release|Any CPU
+		{8EF7311F-EC2A-44FD-91F5-0A2436FA8304}.Release|x86.Build.0 = Release|Any CPU
+		{9E80F546-76DE-44FD-A994-93E59329E297}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{9E80F546-76DE-44FD-A994-93E59329E297}.Debug|Any CPU.Build.0 = Debug|x86
+		{9E80F546-76DE-44FD-A994-93E59329E297}.Release|Any CPU.ActiveCfg = Release|x86
+		{9E80F546-76DE-44FD-A994-93E59329E297}.Release|Any CPU.Build.0 = Release|x86
+		{9E80F546-76DE-44FD-A994-93E59329E297}.Debug|x86.ActiveCfg = Debug|x86
+		{9E80F546-76DE-44FD-A994-93E59329E297}.Debug|x86.Build.0 = Debug|x86
+		{9E80F546-76DE-44FD-A994-93E59329E297}.Release|x86.ActiveCfg = Release|x86
+		{9E80F546-76DE-44FD-A994-93E59329E297}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 EndGlobal

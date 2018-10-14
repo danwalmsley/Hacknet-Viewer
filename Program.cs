@@ -1,23 +1,22 @@
 ﻿using System;
-using Gtk;
+using Avalonia;
+using Avalonia.Logging.Serilog;
 
-namespace hacknet_viewer
-{
-	class MainClass
-	{
-		public static void Main (string[] args)
-		{
+using hacknet_viewer.gui;
+
+namespace hacknet_viewer {
+    class Program {
+        static void Main(string[] args) {
+            BuildAvaloniaApp().Start<MainWindow>();
+
 			Parser parser = new Parser();
 
-			foreach(Node node in parser.nodes)
-				Console.WriteLine(node);
+            AppBuilder.Configure<App>().UsePlatformDetect().Start<MainWindow>();
+        }
 
-			return;
-
-			Application.Init();
-			MainWindow win = new MainWindow();
-			win.Show();
-			Application.Run();
-		}
-	}
+        public static AppBuilder BuildAvaloniaApp()
+            => AppBuilder.Configure<App>()
+                .UsePlatformDetect()
+                .LogToDebug();
+    }
 }

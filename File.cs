@@ -6,14 +6,13 @@ namespace hacknet_viewer {
 		public string name;
 		public string content;
 
-		public File(string path, string name, string content) {
+		public File(string path, string name) {
 			this.path = path;
 			this.name = name;
-			this.content = content;
 		}
 
 		public override string ToString() {
-			return "<" + name + "(File)" +
+			return "<" + name + " (File)" +
 				"\npath: " + path +
 				"\ncontent: " + content +
 				">";
