@@ -30,4 +30,7 @@ Global
 		{9E80F546-76DE-44FD-A994-93E59329E297}.Release|x86.ActiveCfg = Release|x86
 		{9E80F546-76DE-44FD-A994-93E59329E297}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
+	GlobalSection(AvalonStudioProperties) = preSolution
+		StartupItem = {8EF7311F-EC2A-44FD-91F5-0A2436FA8304}
+	EndGlobalSection
 EndGlobal

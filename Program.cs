@@ -7,8 +7,6 @@ using hacknet_viewer.gui;
 namespace hacknet_viewer {
     class Program {
         static void Main(string[] args) {
-            BuildAvaloniaApp().Start<MainWindow>();
-
 			Parser parser = new Parser();
 
             AppBuilder.Configure<App>().UsePlatformDetect().Start<MainWindow>();
