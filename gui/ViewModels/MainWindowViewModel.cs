@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using Avalonia.Controls;
 using ReactiveUI;
 
+using hacknet_viewer.parser;
+
 namespace hacknet_viewer.gui.ViewModels {
 	public class MainWindowViewModel : ViewModelBase {
 		private List<string> _nodes;
