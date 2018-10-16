@@ -1,0 +1,13 @@
+<CustomFaction name="IntroFac" id="introfac" playerVal="0">
+  
+  <Action ValueRequired="1">
+    <RunFunction FunctionName="setHubServer:introFactionHomeNode" FunctionValue="0" />
+    <LoadMission MissionName="Missions/Intro/FactionWelcomeMessage.xml" />
+    <AddThreadToMissionBoard ThreadFilepath="Docs/TestThread.txt" TargetComp="advExamplePC" />
+  </Action>
+
+  <Action ValueRequired="5">
+    <AddAsset FileName="FTPBounce_again.exe" FileContents="#FTP_CRACK#" TargetComp="advExamplePC" TargetFolderpath="bin" />
+  </Action>
+
+</CustomFaction>

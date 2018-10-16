@@ -1,0 +1,38 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<mission id="gettingStarted">
+  <goals>
+  </goals>
+  <missionEnd val="0">addFlags:gettingStartedComplete</missionEnd>
+  <nextMission>NONE</nextMission>
+  <posting title="Starting your own Extension">Create your own empty starting extension that you can build on.</posting>
+  <email>
+    <sender>Matt</sender>
+    <subject>Starting your own Extension</subject>
+    <body>All extensions have their own folder, stored in /Hacknet/Extensions/
+To start, you should open the Steam Guide for Extensions, which contains all of the information here and more - you can use it while you develop your own extension.
+The getting started guide there will show you how to get set up and tested - follow those instructions there to copy over the blank extension and modify the ExtensionInfo.xml file.
+
+Every folder containing an ExtensionInfo.xml file that parses properly will count as an extension.
+
+Open up that file, and read through the descriptions. Change fields to fit your own purposes - start with the Name field up top.
+Comment out fields that you don't need yet (like starting visible nodes, and factions). You can comment something out in XML by surrounding it with the triangle brackets and dashes like you see my comments doing.
+
+Speaking of which - get yourself a good text editor that will point out XML errors for you. I recommend Sublime Text, or Notepad++. Both are free!
+
+To get started, remove the 2 factions, the starting nodes, and the starting mission. Then change the starting theme to one of the default ones.
+After that, you should be up and running!
+
+Save this session, and try out your new empty extension.
+
+When you decide to add some computers, make sure to add them to a folder named "Nodes" (or any subfolder within that) - the extension loader will scan that folder for all computer files and make sure they get loaded in.
+Similarly, for missions, add those to a folder named "Missions" if you want them to be checked in the automated tests.
+
+Reply here when done!
+</body>
+    <attachments>
+      <note title="Online Guide">Search for "Hacknet Extensions Guide" to find the online steam guide - you can keep that open while you won on your own extension, so you don't need to keep reloading this extension for info.
+I recommend just playing through the parts you're interested in here to get the information you need, then using the online guide while you develop.
+      </note>
+    </attachments>
+  </email>
+</mission>

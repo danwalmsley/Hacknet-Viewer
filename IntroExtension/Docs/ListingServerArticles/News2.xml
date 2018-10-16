@@ -1,0 +1,19 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<mission id="news02">
+  <goals>
+  </goals>
+  <nextMission>NONE</nextMission>
+  <posting title="Assigner Tech">
+If assigner is set to true here, you can accept these missions!
+It's very useful to have just the posts though, and use this style of board for infodumps, story, or research targets.
+
+The board algorithm will try and load every xml file in the folder, so only put articles you want in it, and don't include computers!
+  </posting>
+  <email>
+    <sender>NONE</sender>
+    <subject>NONE</subject>
+    <body>NONE</body>
+    <attachments>
+    </attachments>
+  </email>
+</mission>

@@ -1,0 +1,36 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<mission id="people">
+  <goals>
+    
+  </goals>
+  <missionEnd val="1">addRank</missionEnd>
+  <nextMission>NONE</nextMission>
+  <posting title="People" reqs="gettingStartedComplete">Understand the people system, and how to make accounts in medical and academic databases</posting>
+  <email>
+    <sender>Matt</sender>
+    <subject>People</subject>
+    <body>Several daemons use the people system to populate their datasets.
+    
+The people system defines (and generates) a set of data representing a single individual that has accounts and records across multiple servers. This helps create a sense of consistency and identity within the game, and allows players to track down all of the data points about a person on various servers.
+To define a person that will get loaded in and added to relevant servers, add a person descriptor file into the /People/ folder.
+You can see an example person file in:
+
+IntroExtension/People/ExamplePerson.xml
+
+You can add as many people files as you want. Hacknet will automatically generate random people so that the list is filled up to be at least 100 people on new session load, to make the other servers feel full.
+
+Daemons that use data form the people system:
+Databases
+Academic Daemons
+Medical Daemons
+PointClicker
+JMail junk accounts
+
+Reply to this email to move on!
+-M
+</body>
+    <attachments>
+      <note title="Design Notes">It's good practice to create a person file for any full name you specifically mention within your extension's files. When people run into a name, it's satisfying to be able to look up that person's medical records etc and see that more information about them exists within the world.</note>
+</attachments>
+  </email>
+</mission>

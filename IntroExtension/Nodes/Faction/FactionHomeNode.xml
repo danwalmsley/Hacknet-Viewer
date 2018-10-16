@@ -1,0 +1,14 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="introFactionHomeNode" name="Intro Faction Hub" type="empty" security="4">
+
+  
+  <portsForCrack val="4" />
+  <trace time="200" />
+
+  <account username="#PLAYERNAME#" password="hornet" type="3" />
+
+  <!-- group name is purely decorative, no link to faction ID name necessary -->
+  <missionHubServer groupName="IntroFac" serviceName="Intro Faction Hub" missionFolderPath="Missions/IntroFac" themeColor="95,222,159,100" lineColor="54,69,60" backgroundColor="10,10,10,160" />
+  
+  
+</Computer>

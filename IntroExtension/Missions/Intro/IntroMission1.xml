@@ -1,0 +1,32 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<mission id="introMission1">
+  <goals>
+    <goal type="getstring" target="DependableSkeleton" />
+  </goals>
+  <missionStart val="0">loadConditionalActions:Actions/TestActions.xml</missionStart>
+  <nextMission>Missions/Intro/IntroMission2.xml</nextMission>
+  <email>
+    <sender>Matt</sender>
+    <subject>Welcome to Hacknet Extensions</subject>
+    <body>Hey,
+Thanks for checking out the mod tools. This extension will run your through how the tools work, and get you started on your own projects.
+For this guide, I strongly recommend playing in windowed mode.
+
+Each extension has a folder in /Extensions next to Hacknet.exe
+That folder needs to contain ExtensionInfo.xml to define it as a mod - this contains basic setup stuff.
+
+The folder containing the extension you're looking at right now is:
+#EXTENSION_FOLDER_PATH#
+
+To complete this mission, navigate to that folder, then move to the subfolder containing this mission and open it:
+Missions/Intro/IntroMission1.xml
+
+At the top of that file, you'll see a goal of type "getstring". Reply with the text in the "target" field to continue.
+
+Good to have you with us,
+-Matt
+</body>
+    <attachments>
+    </attachments>
+  </email>
+</mission>

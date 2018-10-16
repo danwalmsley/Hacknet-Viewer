@@ -1,0 +1,32 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<mission id="introMission2">
+  <goals>
+    <goal type="filedownload" target="mission2TestNode" file="SSHCrack.exe" path="bin"/>
+    <goal type="filedownload" target="mission2TestNode" file="WebServerWorm.exe" path="bin"/>
+    <goal type="filedownload" target="mission2TestNode" file="SMTPOverflow.exe" path="bin"/>
+  </goals>
+  <nextMission>Missions/Intro/IntroMission3.xml</nextMission>
+  <email>
+    <sender>Matt</sender>
+    <subject>Computer Basics</subject>
+    <body>Excellent work - lets get to it then.
+    
+First up, Computers.
+
+From the base folder of this extension, go to the "Nodes/Intro" folder.
+From there, you can find the file defining the computer that's linked below. It's named:
+
+Mission2TestNode.xml
+
+Open the up and have a look at how a computer is defined in XML. If you don't know how XML works, don't worry, there'll be a guide for that later.
+For now, just get used to looking at the format, and try and recognize how things in that file map to what you see in-game.
+
+For the next step, find the admin pass for that computer in the file, log in, and download the programs that are on it.
+
+-M
+</body>
+    <attachments>
+      <link comp="mission2TestNode" />
+    </attachments>
+  </email>
+</mission>

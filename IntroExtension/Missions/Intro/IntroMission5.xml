@@ -1,0 +1,25 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<mission id="introMission5">
+  <goals>
+  </goals>
+  <nextMission>Missions/Intro/IntroMission6.xml</nextMission>
+  <email>
+    <sender>Matt</sender>
+    <subject>Factions</subject>
+    <body>Computers and missions are the core pieces of Hacknet, and factions use both of these systems to build a more dynamic world, and give the player more choices.
+    
+A faction is, fundamentally, just a set of actions and changes to the world to make once the player has reached certain milestones. They often come with a "Hub" server that the actions populate with missions, and/or an assets or rewards server that gets populated with tools etc for making progress.
+Of course, the faction system can be used however you like - it's not restricted to these things, and can be used to watch for player choices, keep track of game state, and many other things.
+
+The ExampleFaction.xml file describing all of the available functions is in the IntroExtension/Factions folder.
+
+Reply here when you think you have a handle on it. No text required this time. 
+    
+-M
+</body>
+    <attachments>
+      <note title="Important: Including factions">For a faction to work, it *must* be defined in the extension metadata so that it can be generated when the save file is made. Do this with the "Faction" tag. You can see how in the ExtensionInfo.xml of this extension.
+      </note>
+    </attachments>
+  </email>
+</mission>

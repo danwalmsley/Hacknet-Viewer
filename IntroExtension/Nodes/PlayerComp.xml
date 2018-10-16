@@ -1,0 +1,13 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="playerComp" name="#PLAYERNAME# Workstation" security="3" allowsDefaultBootModule="false" type="1" >
+
+<adminPass pass="password" />
+<account username="#PLAYERNAME#" password="macrosoftrulez" type="ADMIN" />
+
+<ports>21, 22, 25, 80</ports>
+
+<proxy time="-1" />
+<portsForCrack val="101" />
+<trace time="300" />
+
+</Computer>

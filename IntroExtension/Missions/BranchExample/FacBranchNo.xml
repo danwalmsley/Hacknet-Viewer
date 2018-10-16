@@ -1,0 +1,14 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<mission id="fbNo">
+  <goals>
+    <goal type="getString" target="no"/>
+  </goals>
+  <nextMission>Missions/BranchExample/FacBranchNoReply.xml</nextMission>
+  <email>
+    <!-- remember, keeping the sender the same here is important! -->
+    <sender>Matt</sender>
+    <subject>This wont be seen</subject>
+    <body>This is just a branch linker mission, so this email never gets seen players</body>
+    <attachments></attachments>
+  </email>
+</mission>

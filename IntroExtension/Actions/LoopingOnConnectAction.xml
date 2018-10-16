@@ -1,0 +1,21 @@
+<ConditionalActions>
+
+  <!-- This is an example of an action that 'loops' - it re-loads itself once it's been triggered so that it can happen again
+  By loading this in, it makes permanent changes to the way things work. This example, if you load it in, will make it so
+  the player's theme gets automatically changes whenever they connect to a specific computer, and changed back once they disconnect!-->
+  
+  <OnConnect target="advExamplePC" needsMissionComplete="false">
+    <SwitchToTheme ThemePathOrName="Themes/YuriTheme.xml" FlickerInDuration="-1.0" />
+    <LaunchHackScript Filepath="HackerScripts/TrapHack.txt" SourceComp="advExamplePC" TargetComp="playerComp" RequireLogsOnSource="false" RequireSourceIntact="false"/>
+  </OnConnect>
+
+  
+  <OnDisconnect target="advExamplePC">
+    
+    <SwitchToTheme ThemePathOrName="Themes/ExampleTheme.xml" FlickerInDuration="-1.0" />
+    <!-- This is the important line. It reloads this very file in again so it can be executed next time the player connects. -->
+    <AddConditionalActions Filepath="Actions/LoopingOnConnectAction.xml" />
+    
+  </OnDisconnect>
+  
+</ConditionalActions>

@@ -1,0 +1,21 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<mission id="testContractMission2">
+  <goals>
+    <getstring target="asdf2" />
+  </goals>
+  <missionEnd val="1">addRank</missionEnd>
+  <nextMission>NONE</nextMission>
+  <posting title="Harder Test Mission">
+    You need to reply asdf2. The terror.
+    :O
+  </posting>
+  <email>
+    <sender>ExTech Hub Services</sender>
+    <subject>Ok this one is hard</subject>
+    <body>reply asdf2
+    </body>
+    <attachments>
+      <note title="asdf">asdf</note>
+    </attachments>
+  </email>
+</mission>

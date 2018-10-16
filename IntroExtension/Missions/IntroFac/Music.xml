@@ -1,0 +1,40 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<mission id="music">
+  <goals>
+    
+  </goals>
+  <missionStart val="0">playCustomSong:Music/Chemical_Burns.ogg</missionStart>
+  <missionEnd val="1">addRank</missionEnd>
+  <nextMission>NONE</nextMission>
+  <posting title="Music" reqs="gettingStartedComplete">Play custom songs!</posting>
+  <email>
+    <sender>Matt</sender>
+    <subject>Music</subject>
+    <body>Custom songs can be played with the mission function "playCustomSong:[SONG_PATH]"
+You can also use playCustomSongImmediatley:[SONG_PATH] to skip the fade between songs and start it immediately.
+
+Songs must be in Ogg Vorbis (.ogg) format!
+
+Also note that for now, songs will not work on the XNA branch - this is because the .ogg format handling code is done within FNA, so the XNA version doesn't have the code to support those files.
+I'll address this when I can, but due to how few people use that branch, it's a lower priority for now. Sorry!
+
+You can also do this from conditional action sets, using the "runFunction" tag.
+
+Open up this mission to see the playCustomSong tag working for this one!
+
+IntroExtension/Missions/IntroFac/Music.xml
+
+
+Reply to complete.
+
+-M    
+</body>
+    <attachments>
+      <note title="Format reminder">Songs *must* be in Ogg vorbis format!</note>
+
+      <note title="XNA Branch Exception">.Ogg files will *NOT* work on the xna branch!
+A strategy for this is to specify a base game song to play first, the instantly override it with your desired custom song - this way XNA players will still get a music change.</note>
+
+</attachments>
+  </email>
+</mission>

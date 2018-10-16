@@ -1,0 +1,36 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<mission id="specialPrograms">
+  <goals>
+    
+  </goals>
+  <missionEnd val="1">addRank</missionEnd>
+  <nextMission>NONE</nextMission>
+  <posting title="Special Programs and Ports" reqs="gettingStartedComplete">Learn about RTSPCrack.exe and ExtSequencer</posting>
+  <email>
+    <sender>Matt</sender>
+    <subject>Sequencer</subject>
+    <body>There are a few special .exes that have been added just for Extensions:
+    
+RTSPCrack.exe (Wildcard: RTSP_EXE ), which breaks port 554.
+
+ESequencer.exe (Wildcard: EXT_SEQUENCER_EXE) is a bit more complicated.
+It's behavior is defined by tags in ExtensionInfo.xml. You can define a spinup time, action set, required flag, and target.
+If the player has the required flag and runs it, they can press the button. As soon as the button is pressed, the action set gets run.
+Once it's spun up, the target is revealed, and the player is connected to it.
+
+You can combine this with things like starting a screen bleed effect (in an Action) and swapping the player's theme on spinup time to replicate the final sequence in the base game of Hacknet, but it's versetile for other things too.
+
+Computers also support displaying the following ports (which are unbreakable by players, but that you can open in HackerScripts):
+
+[3724] = "Blizzard Updater"
+[3659] = "eOS Connection Manager"
+[211] = "Transfer"
+[9418] = "Version Control";
+
+-M
+</body>
+    <attachments>
+      <note title="Wildcards">Wildcards can be used in many places, and are surrounded by Hashes (#). See the examples in files!</note>
+    </attachments>
+  </email>
+</mission>

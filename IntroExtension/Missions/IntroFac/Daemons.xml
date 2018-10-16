@@ -1,0 +1,33 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<mission id="daemons">
+  <goals>
+    
+  </goals>
+  <missionEnd val="1">addRank</missionEnd>
+  <nextMission>NONE</nextMission>
+  <posting title="Daemons" reqs="gettingStartedComplete">Understand daemons and advanced server functions.</posting>
+  <email>
+    <sender>Matt</sender>
+    <subject>Daemons</subject>
+    <body>Daemons are programs running on nodes - they usually perform some server-like function of some sort.
+For example, you are probably reading this from the interface of an email server daemon right now.
+
+You can find a complete list of Daemons in the ExampleComputer.xml file, with instructions on how to use them.
+You can add more than one to a node, but this is usually not recommended, unless you have something very specific in mind.
+
+A daemon will show up when the player connects to a node instead of the default connection screen if it is set as the "default boot daemon".
+You can disable this behavior with the flag at the top of a computer by setting allowsDefaultBootModule to false.
+
+The default daemon will always be the one defined last in a file (towards the bottom), but you can change this behavior like this:
+
+Replace the file DefaultBootModule.txt in the sys folder to be the name of the daemon you want to boot into. You can find the name by just looking at what it says on the button in the default connect screen.
+This updates in real time, so you can make missions that use this behavior. Try it out ingame: linked is a server with a PointCLicker daemon - try deleting or corrupting the DefaultBootModule.txt file and reconnecting. Note that point clicker wont auto start.
+
+-M
+</body>
+    <attachments>
+      <link comp="pointclickerExample" />
+      
+    </attachments>
+  </email>
+</mission>

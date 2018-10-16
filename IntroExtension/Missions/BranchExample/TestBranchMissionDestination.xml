@@ -1,0 +1,15 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<mission id="testBranchDest">
+  <goals>
+    <!-- No goals means all replies will work -->
+  </goals>
+  <nextMission>NONE</nextMission>
+  <email>
+    <sender>Matt</sender>
+    <subject>You reached the branch mission!</subject>
+    <body>
+The branch mission worked!
+    </body>
+    <attachments></attachments>
+  </email>
+</mission>

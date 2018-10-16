@@ -1,0 +1,17 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<mission id="mailServers">
+  <goals>
+    
+  </goals>
+  <missionEnd val="1">addRank</missionEnd>
+  <nextMission>NONE</nextMission>
+  <posting title="Email Servers" reqs="gettingStartedComplete">Modify the jmail server</posting>
+  <email>
+    <sender>Matt</sender>
+    <subject>Email Servers</subject>
+    <body>To modify the jmail server, create a new computer with the id "jmail" and add it to the nodes folder. This server MUST have a mail server, and a user account for the player or it will break the mail icon stuff. Otherwise, you can use all of the normal computer stuff to change things, including creating accounts and emails for other people.
+Similarly, if you want to make an academic database server, make sure it's id is "academic" so that come of the code links will work.
+</body>
+    <attachments></attachments>
+  </email>
+</mission>

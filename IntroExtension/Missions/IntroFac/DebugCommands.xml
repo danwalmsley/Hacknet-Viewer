@@ -1,0 +1,41 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<mission id="debugCommands">
+  <goals>
+  </goals>
+  <missionEnd val="1">addRank</missionEnd>
+  <nextMission>NONE</nextMission>
+  <posting title="Debug Commands" reqs="gettingStartedComplete">Learn debug commands that can make starting and testing your extension easier.</posting>
+  <email>
+    <sender>Matt</sender>
+    <subject>Debug Commands</subject>
+    <body>To Autostart your mod while in development, start Hacknet with the argument
+-extstart [YOUR_MOD_FOLDERNAME]
+
+To start Hacknet on your second monitor, if you have one, use the argument
+-altmonitor
+
+You probably also want to develop with force complete on:
+-enablefc
+
+Debug commands too:
+-enabledebug
+
+Once you have Debug commands enabled:
+
+fh
+Instantly breaks into any computer
+
+dscan [ID]
+reveals a computer by ID name
+
+ra
+reveals everything on the netmap at once
+
+reloadext
+reloads all the nodes in the current extension from source files,
+and updates them in the current save.
+</body>
+    <attachments>
+    </attachments>
+  </email>
+</mission>

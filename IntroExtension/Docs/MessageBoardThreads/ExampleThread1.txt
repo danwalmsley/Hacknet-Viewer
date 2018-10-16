@@ -1,0 +1,25 @@
+testthread1
+------------------------------------------
+#Speech
+This is the defined format for a thread!
+Make sure you copy + paste the section, the
+number of dashes is important. It's also useful as
+a formatting guide.
+------------------------------------------
+>Text that starts with a right caret will be green
+Like above
+------------------------------------------
+#Academic
+If you start the post with a #word it'll include an image with it. Valid words are:
+.Academic
+.Sun
+.Snake
+.Circle
+.Duck
+.Page
+.Speech
+.Mod
+.Chip
+------------------------------------------
+You must also end the file with a line of dashes
+------------------------------------------

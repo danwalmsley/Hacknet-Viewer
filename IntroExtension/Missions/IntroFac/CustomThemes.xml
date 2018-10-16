@@ -1,0 +1,38 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<mission id="customThemes">
+  <goals>
+  </goals>
+  <missionEnd val="1">addRank</missionEnd>
+  <nextMission>NONE</nextMission>
+  <posting title="Custom Themes" reqs="gettingStartedComplete">Create and add your own x-server themes to your extension</posting>
+  <email>
+    <sender>Matt</sender>
+    <subject>Custom Themes</subject>
+    <body> First, check out the example theme file you're looking at now:
+
+IntroExtension/Themes/ExampleTheme.xml
+
+You'll notice it has a bunch of tags with the name of the color, and 3 or 4 numbers which represent the color itself.
+These numbers define a color using the premultiplied-alpha method, so:
+
+R, G, B, A
+Where A is opacity and additivity. These are bytes, so they range from 0 to 255 without decimal places. This is a little complex, so I'll break it down with some examples.
+
+Pure black is 0, 0, 0, 255
+
+Pure White is 255, 255, 255, 255
+
+If the number on the far right (alpha) is 0, the color values provided will ADD to the pixel underneath it. This lets you do highlights that brighten things behind them, and look "sort of" transparent.
+This is a cool effect, and Hacknet uses it a lot, but remember to be tasteful with it - backgrounds like this make text hard to read, for example.
+
+There are a few quirks to what the colors do, as the theme setup was added super early in development, and some things pull colors from strange places. For example, the Proxy/Firewall bars on the probe screen draw their colors from the shell and top bar colors.
+Check out the extra themes on the example computer in /sys for more examples.
+</body>
+    <attachments>
+      <note title="Testing Functions">you can use the command "reloadtheme" if you have debug commands enabled to instantly reload the theme you currently have active and see any changes you've made.</note>
+      
+      <note title="Backgrounds">You can include your own images in the extension and reference them to be used as the background in custom themes. Note that if you want to distribute your mod through steam workshop, you'll need the rights to the images you use! Make sure you get permission.</note>
+
+</attachments>
+  </email>
+</mission>

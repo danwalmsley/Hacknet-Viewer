@@ -1,0 +1,25 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<mission id="whitelists">
+  <goals>
+    
+  </goals>
+  <missionEnd val="1">addRank</missionEnd>
+  <nextMission>NONE</nextMission>
+  <posting title="Whitelists" reqs="gettingStartedComplete">Using whitelists in both local and remote modes</posting>
+  <email>
+    <sender>Matt</sender>
+    <subject>Whitelists</subject>
+    <body>Whitelists can be a bit tricky to use, so i'm going to go over their basics again.
+Whitelists have 2 possible configurations - local and remote.
+A local whitelist can protect itself - it's impossible for the player alone to access this without some sort of help.
+The two ways to give the player access are to delete the Whitelist/authenticator.dll file, or add the player's IP to Whitelist/list.txt using the AppendToFile action. (See ExampleFaction.xml for action details).
+
+A remote whitelist connects to another computer that hosts a local whitelist and checks that computer for authenticator.dll and the player's IP on the whitelist before letting them connect.
+To set this up, first make the local whitelist server on the protector or host server and test that out. After that's running, give the remote server that you want to protect it's own whitelist server daemon, and set the "remote" tag to be the ID of the host server.
+
+-M
+</body>
+    <attachments>
+</attachments>
+  </email>
+</mission>

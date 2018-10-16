@@ -1,0 +1,21 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<mission id="introMission5" activeCheck="true">
+  <goals>
+  </goals>
+  <nextMission>NONE</nextMission>
+  <email>
+    <sender>Matt</sender>
+    <subject>Further Study</subject>
+    <body>Welcome to Intro Faction. 
+From here you can pick what features of Hacknet Extensions you want to learn about, and go at your own pace. For now, everything except getting started is locked - you'll want to see that first.
+
+Attached is the hub server, and your user account details. Good luck!
+
+-M
+</body>
+    <attachments>
+      <link comp="introFactionHomeNode" />
+      <account comp="introFactionHomeNode" user="#PLAYERNAME#" pass="hornet" />
+    </attachments>
+  </email>
+</mission>

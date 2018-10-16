@@ -1,0 +1,24 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<mission id="introMission3">
+  <goals>
+    <goal type="getstring" target="5678" />
+  </goals>
+  <nextMission>Missions/Intro/IntroMission4.xml</nextMission>
+  <email>
+    <sender>Matt</sender>
+    <subject>Advanced Computers</subject>
+    <body>The computer defined in Nodes/ExampleComputer.xml is essentially a reference guide for computers. It contains all features that are supported for a computer to have, and a description for each outlining how to use them.
+
+It's linked below so you can see how it all comes together. Note that there's a lot there - this isn't meant to be a typical computer, but a demonstration of *everything* that's available.
+A good way to use this is to copy and paste the relevant parts of this that you want on your own computer and modify them from there.
+
+Take a look through this, and compare how the file format converts into something tangible ingame.
+
+Once you feel like you understand it enough to move on, reply here with the exact number of seconds that the trace timer takes for that computer.
+-M
+</body>
+    <attachments>
+      <link comp="advExamplePC" />
+    </attachments>
+  </email>
+</mission>

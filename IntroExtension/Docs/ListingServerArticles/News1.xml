@@ -1,0 +1,18 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<mission id="news01">
+  <goals>
+  </goals>
+  <nextMission>NONE</nextMission>
+  <posting title="This is the title of the article">
+And Here is the body!
+You can write whatever here.
+It piggybacks off the mission format, because it's possible to make these servers actually assign these as missions.
+  </posting>
+  <email>
+    <sender>NONE</sender>
+    <subject>NONE</subject>
+    <body>NONE</body>
+    <attachments>
+    </attachments>
+  </email>
+</mission>

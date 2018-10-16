@@ -1,0 +1,13 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="allyHackerSource" name="Secret Ally Hacker Node" type="empty" security="4">
+
+  
+  <portsForCrack val="0" />
+  <ports>3724, 9418</ports>
+  <trace time="-1" />
+
+  <file path="home" name="Guide.txt">This sort of thing is very difficult for most players to find - the only link to it is in the log folder, which players generally don't read, and rm *.
+  
+Still, pretty cool way to hide something really secret!</file>
+  
+</Computer>

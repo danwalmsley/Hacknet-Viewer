@@ -1,0 +1,21 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="jmail" 
+name="Example Mail" 
+allowsDefaultBootModule="true"
+ip="146.175.59.98"
+security="3"
+type="1" > 
+
+  <adminPass pass="qpunNA789" />
+  
+  <ports>80,22,21,25,1433</ports>
+  <portsForCrack val="5" />
+  
+  
+  <account username="#PLAYERNAME#" password="reptile" type="mail" />
+  
+  <mailServer name="Example Mail Server" color="50,237,212">
+
+  </mailServer>  
+  
+</Computer>

@@ -1,0 +1,26 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<mission id="introMission3">
+  <goals>
+    <goal type="getstring" target="asdf" />
+  </goals>
+  <nextMission>Missions/Intro/IntroMission5.xml</nextMission>
+  <email>
+    <sender>Matt</sender>
+    <subject>Missions</subject>
+    <body>Similar to the example computer in the previous mission, I've included an ExampleMission.xml file outlining all of the possible things you can include in a mission.
+    
+You can find that file in the IntroExtension/Missions folder.
+
+Again - remember that this isn't a typical mission file - when making your own missions, it's probably a better idea not to copy this file and remove what you don't need -instead, keep it clean by taking a smaller mission, and adding in or changing what you want.
+This stops there being walls of comments that are all the same everywhere. Still, that's your choice to make.
+
+I wont be assigning the mission in that file, as it's basically impossible to complete (having so many different goals), but the comments should describe how it all works.
+
+When you think you have a handle on it, respond with the name of the file to delete to complete the "fileDeletion" goal of that mission.
+
+-M
+</body>
+    <attachments>
+    </attachments>
+  </email>
+</mission>

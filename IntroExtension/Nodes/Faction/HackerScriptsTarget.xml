@@ -1,0 +1,11 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="hackerTarget" name="Hacker Scripts Target" type="empty" security="4">
+
+  
+  <portsForCrack val="3" />
+  <ports>80, 22, 3724, 9418</ports>
+  <trace time="-1" />
+
+  <file path="bin" name="DELETE_ME.txt">Delete this to complete the mission. Don't delete your logs though, so you can see the hostile hack!</file>
+  
+</Computer>

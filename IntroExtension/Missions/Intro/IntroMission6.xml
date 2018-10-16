@@ -1,0 +1,25 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<mission id="introMission5" activeCheck="true">
+  <goals>
+    <goal type="getadmin" target="factionEntryNode"/>
+  </goals>
+  <missionStart val="0">setFaction:introfac</missionStart>
+  <missionEnd val="1">addRank</missionEnd>
+  <nextMission>NONE</nextMission>
+  <email>
+    <sender>Matt</sender>
+    <subject>Action time</subject>
+    <body>Excellent. That takes care of the fundamentals.
+    
+Lets get you connected to an actual faction's hub server so you can see how that works.
+This faction is defined in the file IntroExtension/Factions/IntroFaction.xml
+
+Break in to the linked computer to continue.
+    
+-M
+</body>
+    <attachments>
+      <link comp="factionEntryNode" />
+    </attachments>
+  </email>
+</mission>

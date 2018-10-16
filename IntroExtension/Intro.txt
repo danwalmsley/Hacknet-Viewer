@@ -1,0 +1,12 @@
+Welcome to Hacknet Extensions
+                     
+	   
+This guide will introduce the fundamentals of Extensions
+and get you started working on your own.
+                         
+It's good to have you with us.
+    
+ -M
+
+  
+   

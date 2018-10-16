@@ -1,0 +1,49 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<mission id="missionBranches">
+  <!-- The goals of this mission should be the 'most critical' to evaluate, as they are always checked first.
+  In this case, it's the abort path. That way, if the player replies with all 3 strings, it will count as an abort.-->
+  <goals>
+    <goal type="getString" target="abort"/>
+  </goals>
+  <!-- This is the mission that will be loaded (as normal) if the abort path if taken. -->
+  <nextMission>Missions/BranchExample/FacBranchAbortReply.xml</nextMission>
+  
+  <!-- Branch missions are always defined directly *under* the next mission tag -->
+  <branchMissions>
+    <!-- the missions listed here are loaded in silent mode (wont send any emails etc) are exist only for some parts of what a mission can support,
+    notably, goals and nextMission tags. They contain the conditions that the player will need to take to get given their reply mission.
+    Take a look at them - this sounds very complex, but they are quite simple if you go one at a time.
+    
+    The branch system can be quite fiddly, but it does give you all the tools you need to use all mission conditions as checks on game state.
+    -->
+    <branch>Missions/BranchExample/FacBranchYes.xml</branch>
+    <branch>Missions/BranchExample/FacBranchNo.xml</branch>
+  </branchMissions>
+  
+  <posting title="Mission Branches" reqs="gettingStartedComplete">Learn about branching missions, and player choice.</posting>
+  <email>
+    <sender>Matt</sender>
+    <subject>Mission Branches</subject>
+    <body>Mission branches are a way to let the player make choices, and provide multiple paths through your extension.
+Mechanically, they work by loading in multiple missions at once, and checking which one the player has completed when they reply (or every frame, if active check is true).
+When this happens, the missions are checked in this order:
+
+Main goals first, then every branch mission in the order that they are defined in the list above.
+
+The first of these goal sets that is complete will take that branch - loading the mission in the nextMission tag of that branch.
+
+For this example, there are 3 possible paths. Reply to this with either "yes", "no" or "abort" to see how they all work. Abort is the base path here, as it's defined in the mission file with this email (that 'hosts' the branches).
+I recommend you chose either "yes" or "no" to see how the branches work.
+Yes and no have their conditions in the relevant mission files linked in the branch tag. You can see that those missions only contain what the branch conditionals need - goals and next mission tags.
+
+They link to additional emails with only delay goals that will auto-complete themselves as a means of sending an email to confirm which branch the player too.
+
+Look through how the system works in this mission file!
+
+IntroExtension/Missions/IntroFac/MissionBranches.xml
+      
+</body>
+    <attachments>
+</attachments>
+  </email>
+</mission>

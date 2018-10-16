@@ -1,0 +1,9 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="pointclickerExample" name="Point Clicker Example" type="empty" security="2" allowsDefaultBootModule="true">
+
+  
+  <portsForCrack val="2" />
+  <ports>80, 22, 3724, 9418</ports>
+  <trace time="-1" />
+  
+</Computer>

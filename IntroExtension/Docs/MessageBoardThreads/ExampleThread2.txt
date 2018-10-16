@@ -1,0 +1,23 @@
+testThread2
+------------------------------------------
+#Circle
+The ID at the top of the file here is the "thread ID"
+
+Message boards are useful for conveying a lot of personality!
+With expanded faction support (which if it isn't in already, is coming soon),
+you will be able to add more threads to a message board, and by adding a thread
+with the same ID as an existing thread, the replies will be added to the bottom of it
+
+You will be able to do this in reaction to flags and mission completions to make the
+world feel more alive!
+------------------------------------------
+>Green text is often used as quotes
+
+and furthermore
+
+>It can be used anywhere in a thread
+
+------------------------------------------
+While the threads don't have usernames or timestamps, you can establish 'characters'
+in your boards with use of consistent icons, signatures or writing styles.
+------------------------------------------

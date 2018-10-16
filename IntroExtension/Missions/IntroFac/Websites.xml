@@ -1,0 +1,36 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<mission id="websites">
+  <goals>
+    
+  </goals>
+  <missionEnd val="1">addRank</missionEnd>
+  <nextMission>NONE</nextMission>
+  <posting title="Websites" reqs="gettingStartedComplete">Learn to use websites, and about their quirks and restrictions</posting>
+  <email>
+    <sender>Matt</sender>
+    <subject>Websites</subject>
+    <body>Websites. The porting nightmare. The buggy mess. The endless hacks.
+These have been nothing but nightmares from day 1, and due to apparently all web rendering services that work cross platform being buggy as anything, many players use the -disableweb launch argument, preventing websites from rendering.
+This means you need to make 100% sure that your missions are completable from these people reading the source of the website.
+
+Websites in Hacknet are restricted to being in only one folder for security reasons, so *everything* you reference within your websites needs to be relative to Web/Cache within your extension folder.
+Before you look into the files, first visit the website itself, linked below.
+
+Your websites themselves (the HTML files) can be stored wherever you like within your extension folder, but all images and .css files you reference must be within the /Web/Cache folder (or a subfolder therein).
+
+Note that websites have a few rendering issues (like stretching for some resolutions and themes). I'll work these kinks out as much as possible before launch, but they may remain, so try to design around them.
+
+-M
+</body>
+    <attachments>
+      <link comp="websiteExample" />
+    
+      <note title="Summary">Create your website HTML file wherever you like. 
+Add all images and CSS files that you want to use in it to the folder Web/Cache or a subfolder inside of it.
+Reference those assets using relative paths only within the website.
+Add a web server daemon to your node with the URL pointing to your html file.
+(See ExampleComputer.xml for details)</note>
+
+</attachments>
+  </email>
+</mission>

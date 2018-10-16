@@ -1,0 +1,22 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<mission id="fbAbort" activeCheck="true">
+  <goals>
+    <!-- This goal will auto-complete in 5 seconds, to make the reply times seem more natural!
+    Remember to note that it also has activeCheck set to true above, so that it checks every frame,
+    otherwise the player would have to click reply, but only after 5 seconds, which would be very confusing.-->
+    <goal type="delay" time="5.0"/>
+  </goals>
+  <missionEnd val="1">addRank</missionEnd>
+  <nextMission>NONE</nextMission>
+  <email>
+    <!-- remember, keeping the sender the same here is important! -->
+    <sender>Matt</sender>
+    <subject>Abort Branch Reply</subject>
+    <body>You replied abort to the mission, and are now on the abort-branch!
+This will have no impact on anything this time, but you can make these take wildly different story branches if you want,
+or do clever things like adding flags etc here that makes the game remember what choices the player made.
+
+Use these later with conditional actions and flag checks to do things!</body>
+    <attachments></attachments>
+  </email>
+</mission>

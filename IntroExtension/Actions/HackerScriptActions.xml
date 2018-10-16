@@ -1,0 +1,16 @@
+<ConditionalActions>
+  
+  <OnConnect target="hackerTarget" needsMissionComplete="false" >
+    <!-- Loads in the Hacker script defined below to execute 5.5 seconds from now, coming from source advExamplePC and targeting playerComp (The player node ID).
+    These can target whatever you like, and be ally scripts! RequireLogsOnSource means that this will only execute if the source comp has logs on it from the player 
+    deleting, moving, or copying a file. You can use the ID or the IP for the source and target - either works.
+    RequireSourceIntact means that if the target is missing it's networking file from /sys, the hack wont happen. This means a crippled computer cant hack you back.-->
+    <LaunchHackScript Filepath="HackerScripts/AllyHack.txt" DelayHost="advExamplePC" Delay="2.5" SourceComp="allyHackerSource" TargetComp="hackerTarget" RequireLogsOnSource="false"/>
+  </OnConnect>
+
+  
+  <OnConnect target="introFactionHomeNode" needsMissionComplete="true">
+    <LaunchHackScript Filepath="HackerScripts/HostileHackerHarrasment.txt" SourceComp="hackerTarget" TargetComp="playerComp" RequireLogsOnSource="true" RequireSourceIntact="true"/>
+  </OnConnect>
+  
+</ConditionalActions>

@@ -1,0 +1,34 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<mission id="customThemes">
+  <goals>
+    <goal type="filedeletion" target="hackerTarget" file="DELETE_ME.txt" path="bin"/>
+  </goals>
+  <missionStart val="0">loadConditionalActions:Actions/HackerScriptActions.xml</missionStart>
+  <missionEnd val="1">addRank</missionEnd>
+  <nextMission>NONE</nextMission>
+  <posting title="Hacker Scripts" reqs="gettingStartedComplete">Learn how to write and use scripts for other hackers in the world taking actions around you.</posting>
+  <email>
+    <sender>Matt</sender>
+    <subject>Hacker Scripts</subject>
+    <body>Hacker scripts can be used to simulate other agents in the world, doing things. In the base game of Hacknet, this is only ever used to simulate agents attacking the player, but it actually supports *any* node as a target, so it's easy to make scripts that helpful or allied hackers follow.
+    
+For example, when connecting to the linked computer below, a script will start that will have a Hacker break several of the ports on that machine. You can finish the job! Once inside, delete the DELETE_ME file, but leave your logs - a flag on the second script will check for your logs, and only attack you if it finds them.
+It should give you a feel for what you can go with it!
+
+An example file with all of the commands you can use in a Hack is stored here:
+IntroExtension/HackerScritps/ExampleHack.txt
+
+These are triggered in game using the conditional actions system (See relevant tutorial for those). The file that loads these attacks in, and sets the relevant sources and targets is here:
+IntroExtension/Actions/HackerScriptActions.txt
+
+That is loaded in on mission start by the missionStart tag in this mission's file:
+IntroExtension/Missions/IntroFact/HackerScripts.xml
+
+Go break into the linked computer and check it out!
+-M
+</body>
+    <attachments>
+      <link comp="hackerTarget" />
+</attachments>
+  </email>
+</mission>
