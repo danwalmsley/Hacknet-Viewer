@@ -5,10 +5,10 @@
 
 ## Visual Studio Code specific files and folder
 .vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.jsons
+# !.vscode/settings.json
+# !.vscode/tasks.json
+# !.vscode/launch.json
+# !.vscode/extensions.jsons
 
 # User-specific files
 *.suo
