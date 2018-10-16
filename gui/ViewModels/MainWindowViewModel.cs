@@ -11,7 +11,7 @@ namespace hacknet_viewer.gui.ViewModels {
 
 		private string _selectedNode;
 
-		public DropDownViewModel() {
+		public MainWindowViewModel() {
 			_selectedNode = _nodes[0];
 		}
 
