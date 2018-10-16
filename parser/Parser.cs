@@ -18,7 +18,7 @@ namespace hacknet_viewer.parser {
             // it will be properly parsed. There is no difference
             // in parsing from base or from Labyrinths!
 
-			Nodes.Add(ComputerParser.ParseNode(Environment.GetFolderPath(Environment.SpecialFolder.Personal) + "/IntroExtension/Nodes/ExampleComputer.xml"));
+			Nodes.Add(ComputerParser.ParseNode("IntroExtension/Nodes/ExampleComputer.xml"));
 		}
 	}		
 }
