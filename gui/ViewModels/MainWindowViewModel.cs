@@ -12,6 +12,7 @@ namespace hacknet_viewer.gui.ViewModels {
 		private Parser _parser;
 
 		private string _selectedNode;
+		private string _nodeData;
 
 		public MainWindowViewModel() {
 			_nodes = new List<string>();
@@ -20,12 +21,15 @@ namespace hacknet_viewer.gui.ViewModels {
 
 			_parser.Parse();
 
-			Console.Write(_parser.Nodes[0]);
-
 			foreach(var node in _parser.Nodes)
 				_nodes.Add(node.name);
 
 			_selectedNode = _nodes[0];
+			updateNodeDisplay();
+		}
+
+		private void updateNodeDisplay() {
+			_nodeData = _parser.GetNode(_selectedNode).ToString();
 		}
 
 		public List<string> Nodes {
@@ -40,6 +44,12 @@ namespace hacknet_viewer.gui.ViewModels {
 
 			set {
 				this.RaiseAndSetIfChanged(ref _selectedNode, value);
+			}
+		}
+
+		public string NodeData {
+			get {
+				return _nodeData;
 			}
 		}
 	}

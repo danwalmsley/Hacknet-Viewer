@@ -1,9 +1,13 @@
 <Window xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow">
+        Title="MainWindow"
+        MinWidth="620" MinHeight="700">
+    <DockPanel LastChildFill="True">
+        <DropDown DockPanel.Dock="Top" Items="{Binding Nodes}"
+                SelectedItem="{Binding SelectedNode, Mode=TwoWay}"
+                VerticalAlignment="Center" Margin="2">
+        </DropDown>
 
-    <DropDown Items="{Binding Nodes}"
-              SelectedItem="{Binding SelectedNode, Mode=TwoWay}"
-              VerticalAlignment="Center" Margin="2">
-    </DropDown>
+        <TextBox AcceptsReturn="True" IsReadOnly="True" Text="{Binding NodeData}"/>
+    </DockPanel>
 </Window>

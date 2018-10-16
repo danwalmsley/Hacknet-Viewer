@@ -20,5 +20,13 @@ namespace hacknet_viewer.parser {
 
 			Nodes.Add(ComputerParser.ParseNode("IntroExtension/Nodes/ExampleComputer.xml"));
 		}
+
+		public Computer GetNode(string nodeName) {
+			foreach(var node in Nodes) {
+				if(node.name == nodeName) return node;
+			}
+
+			return null;
+		}
 	}		
 }
