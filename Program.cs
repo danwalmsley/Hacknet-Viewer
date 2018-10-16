@@ -3,7 +3,6 @@ using Avalonia;
 using Avalonia.Logging.Serilog;
 
 using hacknet_viewer.gui;
-using hacknet_viewer.parser;
 
 namespace hacknet_viewer {
     class Program {
