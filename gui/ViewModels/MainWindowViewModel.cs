@@ -22,14 +22,14 @@ namespace hacknet_viewer.gui.ViewModels {
 			_parser.Parse();
 
 			foreach(var node in _parser.Nodes)
-				_nodes.Add(node.name);
+				_nodes.Add(node.Key);
 
 			_selectedNode = _nodes[0];
 			updateNodeDisplay();
 		}
 
 		private void updateNodeDisplay() {
-			_nodeData = _parser.GetNode(_selectedNode).ToString();
+			_nodeData = _parser.Nodes[_selectedNode].ToString();
 		}
 
 		public List<string> Nodes {
