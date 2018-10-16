@@ -4,7 +4,7 @@ using System.Xml;
 
 using hacknet_viewer;
 
-namespace Hacknet_Viewer.parser {
+namespace hacknet_viewer.parser {
     public static class ComputerParser {
         public static Computer ParseNode(string filename) {
 			XmlDocument doc = new XmlDocument();
