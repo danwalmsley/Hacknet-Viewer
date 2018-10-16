@@ -20,9 +20,7 @@ namespace hacknet_viewer.gui.ViewModels {
 
 			Console.Write(_parser.Nodes[0]);
 
-			foreach(var node in _parser.Nodes) {
-				_nodes.Add(node.name);
-			}
+			_nodes.Add(_parser.Nodes[0].name);
 
 			_selectedNode = _nodes[0];
 		}
