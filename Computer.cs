@@ -12,7 +12,7 @@ namespace hacknet_viewer {
 		public bool allowsDefaultBootModule;
 
 		public List<File> files;
-		public List<String> links;
+		public List<String> links; // Nodes that are connected
 
 		// Security
 		public int portsForCrack; // Above 100 causes an inviolability error
@@ -55,7 +55,17 @@ namespace hacknet_viewer {
          */
 		public List<Daemon> daemons;
 
-		public Memory MemoryDump { get; set; }
+        public Computer(Memory memoryDump) 
+        {
+            this.MemoryDump = memoryDump;
+               
+        }
+        public Computer(Memory memoryDump) 
+        {
+            this.MemoryDump = memoryDump;
+               
+        }
+                		public Memory MemoryDump { get; set; }
 
 		public Computer(string id, string name, string ip, string icon,
 			int security, string type, bool allowsDefaultBootModule) {

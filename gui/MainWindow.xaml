@@ -3,11 +3,19 @@
         Title="MainWindow"
         MinWidth="620" MinHeight="700">
     <DockPanel LastChildFill="True">
-        <DropDown DockPanel.Dock="Top" Items="{Binding Nodes}"
-                SelectedItem="{Binding SelectedNode, Mode=TwoWay}"
-                VerticalAlignment="Center" Margin="2">
-        </DropDown>
-
-        <TextBox AcceptsReturn="True" IsReadOnly="True" Text="{Binding NodeData}"/>
+        <TabControl DockPanel.Dock="Top">
+        </TabControl>
+    
+        <TreeView DockPanel.Dock="Left"></TreeView>
+        
+    
+        <StackPanel>
+            <DropDown Items="{Binding Nodes}"
+                    SelectedItem="{Binding SelectedNode, Mode=TwoWay}"
+                    VerticalAlignment="Center" Margin="2">
+            </DropDown>
+      
+            <TextBox AcceptsReturn="True" IsReadOnly="True" Text="{Binding NodeData}"/>
+        </StackPanel>
     </DockPanel>
 </Window>
