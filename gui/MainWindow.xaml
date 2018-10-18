@@ -6,16 +6,9 @@
         <TabControl DockPanel.Dock="Top">
         </TabControl>
     
-        <TreeView DockPanel.Dock="Left"></TreeView>
+        <TabControl DockPanel.Dock="Left">
+        </TabControl>
         
-    
-        <StackPanel>
-            <DropDown Items="{Binding Nodes}"
-                    SelectedItem="{Binding SelectedNode, Mode=TwoWay}"
-                    VerticalAlignment="Center" Margin="2">
-            </DropDown>
-      
-            <TextBox AcceptsReturn="True" IsReadOnly="True" Text="{Binding NodeData}"/>
-        </StackPanel>
+        <TextBox AcceptsReturn="True" IsReadOnly="True" Text="{Binding NodeData}"/>
     </DockPanel>
 </Window>

@@ -55,17 +55,11 @@ namespace hacknet_viewer {
          */
 		public List<Daemon> daemons;
 
-        public Computer(Memory memoryDump) 
-        {
+        public Computer(Memory memoryDump) {
             this.MemoryDump = memoryDump;
                
         }
-        public Computer(Memory memoryDump) 
-        {
-            this.MemoryDump = memoryDump;
-               
-        }
-                		public Memory MemoryDump { get; set; }
+		public Memory MemoryDump { get; set; }
 
 		public Computer(string id, string name, string ip, string icon,
 			int security, string type, bool allowsDefaultBootModule) {
