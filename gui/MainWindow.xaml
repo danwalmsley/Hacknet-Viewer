@@ -1,14 +1,10 @@
 <Window xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:pages="clr-namespace:hacknet_viewer.gui.pages;assembly=hacknet_viewer"
         Title="MainWindow"
         MinWidth="620" MinHeight="700">
     <DockPanel LastChildFill="True">
-        <TabControl DockPanel.Dock="Top">
-        </TabControl>
     
-        <TabControl DockPanel.Dock="Left">
-        </TabControl>
-        
         <TextBox AcceptsReturn="True" IsReadOnly="True" Text="{Binding NodeData}"/>
     </DockPanel>
 </Window>
