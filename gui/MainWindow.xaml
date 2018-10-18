@@ -3,8 +3,34 @@
         xmlns:pages="clr-namespace:hacknet_viewer.gui.pages;assembly=hacknet_viewer"
         Title="MainWindow"
         MinWidth="620" MinHeight="700">
-    <DockPanel LastChildFill="True">
-    
-        <TextBox AcceptsReturn="True" IsReadOnly="True" Text="{Binding NodeData}"/>
+  <!--<DockPanel LastChildFill="True">
+
+    <TextBox AcceptsReturn="True" IsReadOnly="True" Text="{Binding NodeData}"/>
+  </DockPanel>-->
+    <DockPanel>
+      <StackPanel DockPanel.Dock="Top">
+        <TabStrip Name="strip"  Items="{Binding Items}"  SelectedItem="{Binding SelectedItem}">
+          <TabStrip.ItemsPanel>
+            <ItemsPanelTemplate>
+              <DockPanel  LastChildFill="false" />
+            </ItemsPanelTemplate>
+          </TabStrip.ItemsPanel>
+          <TabStrip.ItemTemplate>
+            <DataTemplate>
+              <TextBlock Text="{Binding Title}" Foreground="Red" />
+            </DataTemplate>
+          </TabStrip.ItemTemplate>
+        </TabStrip>
+      </StackPanel>
+
+      <Carousel Name="PART_Carousel"  Items="{Binding Items}" SelectedItem="{Binding SelectedItem}">
+        <Carousel.ItemTemplate>
+          <DataTemplate>
+            <Border CornerRadius="5" Margin="10" Background="Green" Padding="10">
+              <TextBlock Text="{Binding ExampleProperty}" />
+            </Border>
+          </DataTemplate>
+        </Carousel.ItemTemplate>
+      </Carousel>
     </DockPanel>
 </Window>
